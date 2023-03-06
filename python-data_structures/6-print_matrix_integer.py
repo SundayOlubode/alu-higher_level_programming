@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
-def print_matrix_integer(matrix):
-    matrix = [[x for x in range(1,4)] for y in range(3)]
-    print('{}'.format(matrix))
+def print_matrix_integer(matrix=[[]]):
+    for sublist in matrix:
+        if len(sublist) > 0:
+            for item in sublist:
+                print('{:d}'.format(item))
+        else:
+            print()
