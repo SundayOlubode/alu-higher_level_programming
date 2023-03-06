@@ -8,6 +8,6 @@ def print_matrix_integer(matrix=[[]]):
                 if item == sublist[-1]:
                     print('{:d}'.format(item))
                 else:
-                    print('{:d}'.format(item, end=' '))
+                    print('{:d}'.format(item), end=" ")
         else:
             print()
