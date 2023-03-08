@@ -4,7 +4,14 @@
 def roman_to_int(roman_string):
     if type(roman_string) != str or roman_string is None:
         return 0
-    roman_nums = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
+    roman_nums = {"I": 1,
+            "V": 5,
+            "X": 10,
+            "L": 50,
+            "C": 100,
+            "D": 500,
+            "M": 1000
+            }
     sum_list = list()
     if len(roman_string) == 1:
         return roman_nums[roman_string]
