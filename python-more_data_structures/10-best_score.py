@@ -2,6 +2,6 @@
 
 
 def best_score(a_dictionary):
-    if len(a_dictionary) < 1 or a_dictionary is None:
+    if len(a_dictionary) < 1 or not a_dictionary:
         return None
     return max(a_dictionary, key=a_dictionary.get)
