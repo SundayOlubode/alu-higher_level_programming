@@ -3,8 +3,7 @@
 
 def list_division(my_list_1, my_list_2, list_length):
     new_list = []
-    
-    for i in range(len(list_length)):
+    for i in range(list_length):
         try:
             result = round((my_list_1[i] / my_list[i]), 1)
         except TypeError:
