@@ -11,7 +11,7 @@ class Square():
     def ourAtt(self):
         return self.__size
     
-    @size.setter
+    @ourAtt.setter
     def ourAtt(self, size):
         if (not int(size)):
             raise TypeError('size must be an integer')
