@@ -10,10 +10,9 @@ class Square():
     @property
     def ourAtt(self):
         return self.__size
-    
     @ourAtt.setter
     def ourAtt(self, size):
-        if (not int(size)):
+        if not isinstance(size, int):
             raise TypeError('size must be an integer')
         elif size < 0:
             raise ValueError('size must be >= 0')
