@@ -51,7 +51,7 @@ class Rectangle:
             return ''
         rec = ''
         for i in range(self.__height):
-            rec += self.print_symbol * self.__width
+            rec += str(self.print_symbol) * self.__width
             rec += '\n'
         return rec[:-1]
 
