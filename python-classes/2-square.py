@@ -10,6 +10,7 @@ class Square():
     @property
     def ourAtt(self):
         return self.__size
+    
     @ourAtt.setter
     def ourAtt(self, size):
         if not isinstance(size, int):
