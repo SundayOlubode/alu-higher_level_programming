@@ -7,9 +7,6 @@ class Square():
     def __init__(self, size=0):
         self.ourAtt = size
 
-    def area(self):
-        return (self__size ** 2)
-
     @property
     def ourAtt(self):
         return self.__size
@@ -22,3 +19,6 @@ class Square():
             raise ValueError('size must be >= 0')
         else:
             self.__size = size
+
+    def area(self):
+        return self.__size ** 2
