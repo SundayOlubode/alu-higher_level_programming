@@ -1,25 +1,49 @@
 #!/usr/bin/python3
-""" Define a class of Square """
+"""Define a square"""
 
 
-class Square():
-    ' Define with optionla args and setters '
-    def __init__(self, size=0, position=(0,0)):
+class Square:
+    """Creates a square.
+    Private instance attributes: size
+    """
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Initialize data."""
+        self.__size = size
+        self.__position = position
+
+    @property
+    def size(self):
+        """Retrieve size."""
+        return self.__size
+
+    @size.setter
+    def size(self, value):
+        """Sets size to a value."""
+        if not isinstance(value, int):
+            raise TypeError("size must be an integer")
+        elif value < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = value
+
+    def __init__(self, size=0, position=(0, 0)):
+        """Initializes the data."""
         self.size = size
         self.position = position
 
     @property
     def size(self):
+        """Retrieves the size."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Sets the size to a value."""
         if not isinstance(value, int):
-            raise TypeError('size must be an integer')
+            raise TypeError("size must be an integer")
         elif value < 0:
-            raise ValueError('size must be >= 0')
-        else:
-            self.__size = value
+            raise ValueError("size must be >= 0")
+        self.__size = value
 
     @property
     def position(self):
@@ -38,6 +62,7 @@ class Square():
         self.__position = value
 
     def area(self):
+        """Returns the current square area."""
         return self.__size ** 2
 
     def my_print(self):
