@@ -3,7 +3,7 @@
 
 
 class Square():
-    """ initialise attribute """
+    ' Define with optionla args and setters '
     def __init__(self, size=0):
         self.size = size
 
@@ -22,9 +22,9 @@ class Square():
 
     def area(self):
         return self.__size ** 2
-    
+
     def my_print(self):
-        if self.__size = 0:
-            print()
-        for i in range(self.__size):
-            print('#' * self.__size)
+        if self.__size == 0:
+            return print()
+        for i in range(len(self.__size)):
+            print('#' * len(self.__size))
