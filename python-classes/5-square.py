@@ -3,7 +3,7 @@
 
 
 class Square():
-    ' Define some other attributes '
+    """ Define some other attributes """
     def __init__(self, size=0):
         self.size = size
 
