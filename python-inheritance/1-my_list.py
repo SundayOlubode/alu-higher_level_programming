@@ -4,7 +4,9 @@
 
 class MyList(list):
     """ Sorts lists object """
+    copy_list = []
 
     def print_sorted(self):
-        self.sort()
-        print(self)
+        copy_list = self[:]
+        copy_list.sort()
+        print(copy_list)
