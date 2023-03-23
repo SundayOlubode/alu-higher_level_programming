@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-' Check for subclass '
+""" Check if an instance """
 
 
 def inherits_from(obj, a_class):
-    """ check subclass """
+    """ Subclass """
     return isinstance(obj, a_class) and type(obj) not a_class
