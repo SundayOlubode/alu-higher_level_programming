@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Check if a subclass """
+' Check for subclass '
 
 
 def inherits_from(obj, a_class):
