@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-""" Check if an instance """
+"""Checks object class"""
 
 
 def inherits_from(obj, a_class):
-    """ Subclass """
+    """Checks object class
+    Args:
+        - obj: object to class
+        - a_class: class to check
+    """
     return isinstance(obj, a_class) and type(obj) not a_class
