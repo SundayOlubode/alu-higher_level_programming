@@ -1,0 +1,20 @@
+>>> Mylist = __import__('1-my_list.py').MyList
+
+>>> my_list = Mylist()
+
+>>> my_list
+[]
+
+>>> my_list.append(5)
+
+>>> my_list.append(6)
+
+>>> my_list
+[5,6]
+
+>>> my_list.append(2)
+
+>>> my_list.append(1)
+
+>>> my_list
+[5, 6, 2, 1]
