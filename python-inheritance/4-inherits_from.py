@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" Check if only a subclass """
+""" 
+    Check if only a subclass 
+    """
 
 
 def inherits_from(obj, a_class):
