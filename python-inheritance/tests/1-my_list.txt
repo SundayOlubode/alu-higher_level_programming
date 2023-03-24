@@ -1,9 +1,9 @@
->>> Mylist = __import__('1-my_list.py').MyList
+>>> MyList = __import__('1-my_list').MyList
 
->>> type(Mylist)
-<class 'list'>
+>>> type(MyList)
+<class 'type'>
 
->>> my_list = Mylist()
+>>> my_list = MyList()
 
 >>> my_list
 []
