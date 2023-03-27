@@ -1,1 +1,2 @@
-SHOW DATABASES
+-- show all db
+SHOW DATABASES;
