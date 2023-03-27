@@ -1,0 +1,2 @@
+-- Drop db
+DROP DATABASE IF NOT EXISTS hbtn_0c_0
