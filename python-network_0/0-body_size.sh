@@ -1,3 +1,3 @@
 #!/bin/bash
 # Getting started with curl
-curl -s -w "$1"
+curl -sI "$1" | grep 'Content-Length' | cut -d " " -f2;
