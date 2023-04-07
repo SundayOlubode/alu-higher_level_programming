@@ -5,5 +5,8 @@ from urllib.request import Request, urlopen
 
 req = Request('https://alu-intranet.hbtn.io/status')
 with urlopen(req) as res:
-	resBody = res.read()
-	print(resBody)
+	content = res.read()
+	print("Body response:")
+        print("\t- type: {}".format(type(content)))
+        print("\t- content: {}".format(content))
+        print("\t- utf8 content: {}".format(content.decode("utf-8")))
