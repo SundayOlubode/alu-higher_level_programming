@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#0-hbtn_status.py
 """0-hbtn_status.py"""
 
 from urllib.request import Request, urlopen
