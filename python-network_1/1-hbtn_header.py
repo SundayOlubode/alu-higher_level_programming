@@ -1,12 +1,10 @@
 #!/usr/bin/python3
-""" I document """
+"""I documented you"""
 
+from urllib.request import urlopen
 import sys
-from urllib.request import urlopen, Request
 
-if __name__ == "__main__":
-    req = Request(sys.argv[1])
-
-    with urlopen(req) as res:
-        content = res.read()
-	print(res.getheader('X-Request-Id'))
+if __name__ == '__main__':
+    with urlopen(sys.argv[1]) as res:
+        header = res.info()
+        print(header["X-Request-Id"])
