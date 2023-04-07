@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 #0-hbtn_status.py
+"""0-hbtn_status.py"""
 
 from urllib.request import Request, urlopen
 
 req = Request('https://alu-intranet.hbtn.io/status')
+
 with urlopen(req) as res:
 	content = res.read()
 	print("Body response:")
