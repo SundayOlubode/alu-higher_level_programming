@@ -5,7 +5,7 @@ import sys
 from urllib.request import urlopen, Request
 
 if __name__ == "__main__":
-	req = Request(argv[1])
+	req = Request(sys.argv[1])
 	
 	with urlopen(req) as res:
 		content = res.read()
