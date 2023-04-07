@@ -5,8 +5,8 @@ import sys
 from urllib.request import urlopen, Request
 
 if __name__ == "__main__":
-	req = Request(sys.argv[1])
-	
-	with urlopen(req) as res:
-		content = res.read()
-		print(res.getheader('X-Request-Id'))
+    req = Request(sys.argv[1])
+
+    with urlopen(req) as res:
+        content = res.read()
+	print(res.getheader('X-Request-Id'))
