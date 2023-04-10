@@ -16,6 +16,10 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
+>>> add_integer(2 ** 10000* .1)
+Traceback (most recent call last):
+OverflowError: int too large to convert to float
+
 >>> add_integer(4)
 102
 
