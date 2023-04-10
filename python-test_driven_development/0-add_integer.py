@@ -5,7 +5,7 @@
 
 
 def add_integer(a, b=98):
-   """ 
+    """ 
     This function adds two integers
     """
     if type(a) not in [int, float]:
