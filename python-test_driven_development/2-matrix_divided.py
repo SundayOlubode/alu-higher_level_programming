@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-""" Divide a matrix """
+"""
+    Divide a matrix
+"""
 
 
 def matrix_divided(matrix, div):
-    """ Divide a matrix """
+    """
+        Divide a matrix
+    """
     
     if type(div) not in [int, float]:
         raise TypeError('div must be a number')
