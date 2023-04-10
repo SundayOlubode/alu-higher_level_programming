@@ -1,5 +1,3 @@
->>> from 0-add_integer import add_integer
-
 >>> add_integer(4, "School")
 b must be an integer
 
