@@ -24,7 +24,7 @@ class TestMaxInt(unittest.TestCase):
 
     def test_max_middle_case(self):
         """"Doc"""
-        self.assertEqual(max_integer([7, 2, 5, 3, 4]), 7)
+        self.assertEqual(max_integer([7, 2, 8, 3, 4]), 8)
 
     def test_one_element_case(self):
         """"Doc"""
