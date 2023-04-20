@@ -3,7 +3,10 @@
 
 
 import unittest
+import os
+import sys
 
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 from models.base import Base
 
@@ -19,5 +22,5 @@ class TestBase(unittest.TestCase):
         self.assertEqual(b2.id, 2)
         self.assertEqual(b9.id, 9)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     unittest.main()
