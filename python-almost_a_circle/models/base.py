@@ -8,11 +8,19 @@ class Base():
 
     def __init__(self, id=None):
         """ Init """
-        if id is None:
-            Base.__nb_objects += 1
-            self.id = Base.__nb_objects
-        else:
-            self.id = id
+        self.id = id
+
+        @property
+        def id(self):
+            return self.__id
+
+        @id.setter
+        def id(self, val):
+            if val is None:
+                Base.__nb_objects += 1
+                self.__id = Base.__nb_objects
+            else:
+                self.__id = val
 
 
 b1 = Base()
