@@ -18,7 +18,7 @@ class Base():
         def id(self, val):
             if val is None:
                 Base.__nb_objects += 1
-                self.__id = Base.__nb_objects
+                self.__id = self.__nb_objects
             else:
                 self.__id = val
 
