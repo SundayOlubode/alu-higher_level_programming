@@ -15,12 +15,12 @@ class Base():
         return self.__id
 
     @id.setter
-    def id(self, id):
-        if id is None:
+    def id(self, val):
+        if val is None:
             Base.__nb_objects += 1
             self.__id = self.__nb_objects
         else:
-            self.__id = id
+            self.__id = val
 
 b1 = Base()
 b2 = Base()
