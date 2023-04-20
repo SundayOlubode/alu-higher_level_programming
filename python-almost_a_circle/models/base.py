@@ -22,5 +22,5 @@ class Base():
             else:
                 self.__id = val
 
-
 b1 = Base()
+b2 = Base()
