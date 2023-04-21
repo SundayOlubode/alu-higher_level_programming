@@ -72,15 +72,10 @@ class Rectangle(Base):
 
     def display(self):
         """ display rec in hash """
-        rec_w = self.__width
-        rec_h = self.__height
-        w_len = ''
-
-        for l in range(rec_w):
-            w_len += '#'
-
-        for l in range(rec_h):
-            print(w_len)
+        for i in range(self.__y):
+            print()
+        for i in range(self.__height):
+            print(' ' * self.__x + '#' * self.__width)
 
     def __str__(self):
         """ class info """
