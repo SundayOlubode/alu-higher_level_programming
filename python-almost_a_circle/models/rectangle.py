@@ -69,3 +69,15 @@ class Rectangle(Base):
         """ compute area """
         rec_area = self.__width * self.__height
         return rec_area
+
+    def display(self):
+        """ display rec in hash """
+        rec_w = self.__width
+        rec_h = self.__height
+        w_len = ''
+        
+        for l in rec_w:
+            w_len += l
+
+        for l in rec_h:
+            print(w_len)
