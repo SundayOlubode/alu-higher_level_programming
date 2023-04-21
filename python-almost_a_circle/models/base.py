@@ -8,7 +8,6 @@ class Base():
 
     def __init__(self, id=None):
         """ Init """
-        Base.__nb_objects += 1
         self.id = id
 
     @property
@@ -18,9 +17,7 @@ class Base():
     @id.setter
     def id(self, val):
         if val is None:
+            Base.__nb_objects += 1
             self.__id = self.__nb_objects
         else:
             self.__id = val
-
-b1 = Base()
-b2 = Base()
