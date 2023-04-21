@@ -76,8 +76,8 @@ class Rectangle(Base):
         rec_h = self.__height
         w_len = ''
         
-        for l in rec_w:
+        for l in range(rec_w):
             w_len += l
 
-        for l in rec_h:
+        for l in range(rec_h):
             print(w_len)
