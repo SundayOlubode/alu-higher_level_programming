@@ -77,7 +77,7 @@ class Rectangle(Base):
         w_len = ''
         
         for l in range(rec_w):
-            w_len += l
+            w_len += '#'
 
         for l in range(rec_h):
             print(w_len)
