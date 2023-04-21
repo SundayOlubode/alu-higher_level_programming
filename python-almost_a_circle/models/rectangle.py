@@ -2,7 +2,7 @@
 """ rectangle.py """
 
 
-from models.base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -10,6 +10,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """ Initialize every instance """
+
         super().__init__(id)
         self.width = width
         self.height = height
@@ -21,8 +22,8 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def setter(self, val):
-        self.__width = self.width
+    def width(self, val):
+        self.__width = val
 
     @property
     def height(self):
@@ -30,7 +31,7 @@ class Rectangle(Base):
     
     @height.setter
     def height(self, val):
-        self.__height = self.height
+        self.__height = val
 
     @property
     def x(self):
@@ -38,7 +39,7 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, val):
-        self.__x = self.x
+        self.__x = val
     
     @property
     def y(self):
@@ -46,4 +47,5 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, val):
-        self.__y = self.y
+        self.__y = val
+
