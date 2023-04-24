@@ -35,7 +35,6 @@ class Base():
     @classmethod
     def save_to_file(cls, list_objs):
         """ save json rep to a file """
-        
         objs_dict_rep = []
 
         with open(cls.__name__ + '.json', 'w', encoding='utf-8') as f:
