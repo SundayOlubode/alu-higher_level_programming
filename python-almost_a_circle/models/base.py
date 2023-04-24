@@ -29,4 +29,4 @@ class Base():
         if list_dictionaries is None or \
                 len(list_dictionaries) == 0:
             return "[]"
-    return json.dumps(list_dictionaries)
+        return json.dumps(list_dictionaries)
