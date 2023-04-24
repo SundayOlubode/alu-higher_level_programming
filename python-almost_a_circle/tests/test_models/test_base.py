@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """ test_base.py """
 
-
+import os
 from unittest import TestCase
 from models.base import Base
 
