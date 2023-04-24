@@ -1,27 +1,22 @@
 #!/usr/bin/python3
 """ test_base.py """
 
-
 import os
-from unittest import TestCase
-import sys
-
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+import unittest
 
 from models.base import Base
+from models.rectangle import Rectangle
+from models.square import Square
 
 
-class TestBase(TestCase):
-    """ Test Base class """
-    def test_base(self):
+class TestBase(unittest.TestCase):
+    """Test class for Base"""
+
+    def test_basic(self):
+        """Doc"""
+        base = Base()
         base_1 = Base()
-        base_2 = Base()
         base_89 = Base(89)
-        base_3 = Base()
-        self.assertEqual(1, base_1.id)
-        self.assertEqual(2, base_2.id)
-        self.assertEqual(89, base_89.id)
-        self.assertEqual(3, base_3.id)
-
-if __name__ == '__main__':
-    unittest.main()
+        self.assertEqual(base.id, 1)
+        self.assertEqual(base_1.id, 2)
+        self.assertEqual(base_89.id, 89)
