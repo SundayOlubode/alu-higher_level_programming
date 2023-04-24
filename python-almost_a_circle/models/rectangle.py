@@ -107,8 +107,7 @@ class Rectangle(Base):
                 self.y = kwargs['y']
 
     def to_dictionary(self):
-        """returns the dictionary rep of Rectangle"""
-        
+        """returns the dictionary rep of Rectangle""" 
         return {
             'id': self.id,
             'width': self.width,
