@@ -19,7 +19,8 @@ def select_states():
     cur = db.cursor()
 
     sql = "SELECT * FROM states\
-        WHERE name='{:s}' ORDER BY id".format(sys.argv[4])
+        WHERE BINARY name='{:s}' ORDER BY id"\
+        .format(sys.argv[4])
 
     cur.execute(sql)
 
