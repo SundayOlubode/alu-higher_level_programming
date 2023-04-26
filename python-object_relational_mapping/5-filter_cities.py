@@ -26,6 +26,7 @@ def my_safe_filter_states():
 
     rows = cur.fetchall()
     cites = []
+
     for row in rows:
         cites.append(row[0])
 
