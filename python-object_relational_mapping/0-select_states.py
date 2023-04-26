@@ -18,7 +18,7 @@ def connect_db():
 
      cur = db.cursor()
 
-     cur.execute('SELECT * FROM states ORDERBY id')
+     cur.execute('SELECT * FROM states ORDER BY id')
 
      rows = cur.fetchall()
 
