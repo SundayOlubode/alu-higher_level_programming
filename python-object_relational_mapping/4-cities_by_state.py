@@ -17,7 +17,10 @@ def select_cities():
                          )
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM cities ORDER BY id")
+    cur.execute("SELECT cities.id, cities.name, \
+        states.name FROM cities\
+        JOIN states ON cities.state_id = states.id\
+        ORDER BY cities.id ASC")
 
     rows = cur.fetchall()
     for row in rows:
