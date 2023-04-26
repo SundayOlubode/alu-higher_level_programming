@@ -16,12 +16,12 @@ def my_safe_filter_states():
                          db=sys.argv[3]
                          )
     cur = db.cursor()
-    
+
     sql = "SELECT cities.name FROM cities\
-                    JOIN states ON cities.state_id = states.id\
-                    AND states.name = %s\
-                    ORDER BY cities.id ASC"
-    
+            JOIN states ON cities.state_id = states.id\
+            AND states.name = %s\
+            ORDER BY cities.id ASC"
+
     cur.execute(sql, (sys.argv[4],))
 
     rows = cur.fetchall()
