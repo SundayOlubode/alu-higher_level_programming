@@ -19,7 +19,7 @@ def select_states():
     cur = db.cursor()
 
     sql = "SELECT * FROM states\
-        WHERE name LIKE {} ORDER BY id".format(sys.argv[4])
+        WHERE name='{:s}' ORDER BY id".format(sys.argv[4])
 
     cur.execute(sql)
 
