@@ -10,4 +10,4 @@ const nbOccurences = (list, searchElement) => {
   return count;
 };
 
-module.export = { nbOccurences };
+module.exports = { nbOccurences };
