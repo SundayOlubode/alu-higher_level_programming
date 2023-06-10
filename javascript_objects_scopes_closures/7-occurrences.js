@@ -1,13 +1,13 @@
 #!/usr/bin/node
 
-const nbOccurences(list, searchElement) => {
-  let count = 0
-  
-  for (let elem of list){
-    if (elem === searchElement) count++ 
+const nbOccurences = (list, searchElement) => {
+  let count = 0;
+
+  for (const elem of list) {
+    if (elem === searchElement) count++;
   }
 
-  return count
-}
+  return count;
+};
 
-module.export = {nbOccurences}
+module.export = { nbOccurences };
