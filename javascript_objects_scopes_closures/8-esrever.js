@@ -1,7 +1,12 @@
 #!/usr/bin/node
 
 const esrever = (list) => {
-  return list.reverse();
+  const newArr = [];
+  for (const elem of list) {
+    newArr.unshift(elem);
+  }
+
+  return newArr;
 };
 
 module.exports = { esrever };
