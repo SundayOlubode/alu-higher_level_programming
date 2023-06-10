@@ -8,12 +8,9 @@ class Square extends parentSquare {
   }
 
   charPrint (c) {
-    let char = c;
-    if (!c) {
-      char = 'X';
-    }
-    for (let i = 0; i < this.size; i++) {
-      console.log(char.repeat(this.size));
+    const char = c || 'X';
+    for (let i = 0; i < this.height; i++) {
+      console.log(char.repeat(this.width));
     }
   }
 }
