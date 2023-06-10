@@ -1,5 +1,7 @@
 #!/usr/bin/node
 
-const esrever = (list) => list.reverse();
+const esrever = (list) => {
+  return list.reverse();
+};
 
 module.exports = { esrever };
