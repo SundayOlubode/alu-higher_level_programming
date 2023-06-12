@@ -2,7 +2,7 @@
 
 const { argv } = require('process');
 const request = require('request');
-
+const fs = require('fs');
 const url = argv[2];
 const file = argv[3];
 
